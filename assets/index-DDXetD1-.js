@@ -3,9 +3,9 @@
     <nav class="w-full mx-auto flex flex-row justify-between items-center p-1"> 
 
       <div class="flex ml-2 mt-1">
-        <img src="/src/assets/svg/layer1.svg" alt="Logo">
+        <img src="./src/assets/svg/layer1.svg" alt="Logo">
         <div>
-          <img src="/src/assets/svg/g788.svg" alt="Logo Name" class="mt-5 ml-1">
+          <img src="./src/assets/svg/g788.svg" alt="Logo Name" class="mt-5 ml-1">
         </div>
       </div>
 
