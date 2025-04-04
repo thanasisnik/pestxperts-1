@@ -1,11 +1,11 @@
-(function(){const l=document.createElement("link").relList;if(l&&l.supports&&l.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))i(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const s of t.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&i(s)}).observe(document,{childList:!0,subtree:!0});function r(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function i(e){if(e.ep)return;e.ep=!0;const t=r(e);fetch(e.href,t)}})();const h=`
+(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&n(r)}).observe(document,{childList:!0,subtree:!0});function s(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function n(e){if(e.ep)return;e.ep=!0;const t=s(e);fetch(e.href,t)}})();const u=`
   <header class=" bg-white shadow-md">
     <nav class="w-full mx-auto flex flex-row justify-between items-center p-1"> 
 
       <div class="flex ml-2 mt-1">
-        <img src="./src/assets/svg/layer1.svg" alt="Logo">
+        <img src="/assets/svg/layer1.svg" alt="Logo">
         <div>
-          <img src="./src/assets/svg/g788.svg" alt="Logo Name" class="mt-5 ml-1">
+          <img src="/assets/svg/g788.svg" alt="Logo Name" class="mt-5 ml-1">
         </div>
       </div>
 
@@ -43,7 +43,7 @@
 
   </header>
 
-`,f=`
+`,g=`
     <footer class="footer footer-horizontal footer-center bg-urbanGrayLight text-base-content rounded p-10">
     <nav class="flex flex-col md:flex-row justify-center gap-10">
       <a href="./index.html" class="link link-hover">Αρχική</a>
@@ -94,4 +94,4 @@
       <p>Copyright © 2025 - All rights reserved by PestXperts</p>
     </aside>
   </footer>
-`;document.getElementById("header").innerHTML=h;document.getElementById("footer").innerHTML=f;const d=document.getElementById("menu-toggle"),c=document.getElementById("mobile-menu"),u=document.getElementById("overlay");d.addEventListener("click",()=>{d.classList.toggle("open"),c.classList.toggle("translate-x-0"),c.classList.toggle("translate-x-full"),u.classList.toggle("opacity-100"),u.classList.toggle("pointer-events-none")});document.addEventListener("DOMContentLoaded",()=>{});const n=document.querySelectorAll(".carousel-item");let o=0;function g(a){n.forEach((l,r)=>{l.style.opacity=r===a?"1":"0"})}function m(){o=(o+1)%n.length,g(o)}function p(){o=(o-1+n.length)%n.length,g(o)}document.getElementById("nextBtn").addEventListener("click",m);document.getElementById("prevBtn").addEventListener("click",p);setInterval(m,5e3);
+`;document.getElementById("header").innerHTML=u;document.getElementById("footer").innerHTML=g;const a=document.getElementById("menu-toggle"),i=document.getElementById("mobile-menu"),d=document.getElementById("overlay");a.addEventListener("click",()=>{a.classList.toggle("open"),i.classList.toggle("translate-x-0"),i.classList.toggle("translate-x-full"),d.classList.toggle("opacity-100"),d.classList.toggle("pointer-events-none")});document.addEventListener("DOMContentLoaded",()=>{const l=document.querySelectorAll(".carousel-item");let o=0;function s(t){l.forEach((r,c)=>{r.style.opacity=c===t?"1":"0"})}function n(){o=(o+1)%l.length,s(o)}function e(){o=(o-1+l.length)%l.length,s(o)}document.getElementById("nextBtn").addEventListener("click",n),document.getElementById("prevBtn").addEventListener("click",e),setInterval(n,5e3)});
