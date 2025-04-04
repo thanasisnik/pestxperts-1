@@ -41,3 +41,8 @@ pnpm-debug.log*
 
 # Vite cache
 .vite/
+
+
+vite.config.json
+package.json
+package-lock.json
