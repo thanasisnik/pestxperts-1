@@ -3,9 +3,9 @@
     <nav class="w-full mx-auto flex flex-row justify-between items-center p-1"> 
 
       <div class="flex ml-2 mt-1">
-        <img src="/assets/svg/layer1.svg" alt="Logo">
+        <img src="./assets/svg/layer1.svg" alt="Logo">
         <div>
-          <img src="/assets/svg/g788.svg" alt="Logo Name" class="mt-5 ml-1">
+          <img src="./assets/svg/g788.svg" alt="Logo Name" class="mt-5 ml-1">
         </div>
       </div>
 
@@ -13,7 +13,7 @@
             <li><a href="/index.html" class="text-gray-700 font-medium hover:text-logoGold transition-colors duration-300 text-md md:text-lg">Αρχική</a></li>
             <li><a href="#" class="text-gray-700 font-medium hover:text-logoGold transition-colors duration-300 text-md md:text-lg">Υπηρεσίες</a></li>
             <li><a href="#" class="text-gray-700 font-medium hover:text-logoGold transition-colors duration-300 text-md md:text-lg">Συχνές Ερωτήσεις</a></li>
-            <li><a href="/contact.html" class="text-gray-700 font-medium hover:text-logoGold transition-colors duration-300 text-md md:text-lg">Επικοινωνία</a></li>
+            <li><a href="#" class="text-gray-700 font-medium hover:text-logoGold transition-colors duration-300 text-md md:text-lg">Επικοινωνία</a></li>
         </ul>
 
         <button class="relative hidden md:inline-flex items-center justify-center px-5 py-2.5 mb-2 me-2 text-sm md:text-lg font-medium
