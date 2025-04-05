@@ -19,7 +19,7 @@
         <button class="relative hidden md:inline-flex items-center justify-center px-5 py-2.5 mb-2 me-2 text-sm md:text-lg font-medium
          text-logoGold border border-logoGold rounded-lg hover:bg-logoGold hover:text-white focus:ring-4 focus:outline-none
          focus:ring-logoGoldDark shadow-md shadow-logoGold">
-              Καλέστε
+             <i class="fa-solid fa-phone mr-2"></i> Καλέστε
         </button>
 
         <button id="menu-toggle" class="relative w-8 h-8 flex flex-col justify-center items-center md:hidden group z-50">
