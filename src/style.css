@@ -13,6 +13,14 @@
   --color-myblack2: #222222;
   --color-myblack3: #262626;
   --color-myblack4: #2A2A2A;
-  
+  --color-navbar: #FFFFFF;
+  --color-bg-contact: #01160683;
 }
 
+
+.mycustombg {
+  
+  background-image: url('../public/assets/img/Untitled.png');
+  background-size: 2000px;
+  background-position-x: right;
+}
