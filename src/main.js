@@ -35,7 +35,7 @@ const headerHTML = `
            focus:ring-logoGoldDark shadow-md shadow-logoGold">
              <i class="fa-solid fa-phone mr-2"></i> Καλέστε
       </button>
-      <button id="menu-toggle" class="relative w-8 h-8 flex flex-col justify-center items-center md:hidden group z-70">
+      <button id="menu-toggle" class="relative mr-3 w-8 h-8 flex flex-col justify-center items-center md:hidden group z-70">
         <span class="bg-urbanGray block absolute h-1 w-8 rounded transition-all duration-300 ease-in-out top-0 group-[.open]:top-1/2 group-[.open]:translate-y-[-50%] group-[.open]:rotate-45"></span>
         <span class="bg-urbanGray block absolute h-1 w-8 rounded transition-all duration-300 ease-in-out top-1/2 translate-y-[-50%] group-[.open]:opacity-0"></span>
         <span class="bg-urbanGray block absolute h-1 w-8 rounded transition-all duration-300 ease-in-out bottom-0 group-[.open]:bottom-1/2 group-[.open]:translate-y-[50%] group-[.open]:-rotate-45"></span>
@@ -55,7 +55,7 @@ const headerHTML = `
 
 // Footer HTML
 const footerHTML = `
-    <footer class="footer footer-horizontal footer-center bg-urbanGrayLight text-base-content rounded p-10">
+    <footer class=" footer footer-horizontal footer-center bg-urbanGrayLight text-base-content rounded p-5">
     <nav class="flex flex-col md:flex-row justify-center items-center gap-10">
       <a href="${BASE_PATH}" data-link class="link link-hover">Αρχική</a>
       <a href="${BASE_PATH}services" data-link class="link link-hover">Υπηρεσίες</a>
@@ -76,7 +76,6 @@ const footerHTML = `
   </footer>
 `;
 
-// Core Functions
 async function loadPage(url = location.pathname) {
   try {
     const path = url.startsWith(BASE_PATH) ? url : `${BASE_PATH}${url.replace(/^\//, '')}`;
@@ -92,18 +91,16 @@ async function loadPage(url = location.pathname) {
     initPageFeatures();
     toggleMobileMenu(false);
     
-    // Update URL without reload
     if (location.pathname !== path) {
       history.pushState(null, '', path);
     }
   } catch (error) {
     console.error("Page load error:", error);
-    app.innerHTML = `
-      <div class="error-message">
-        <h2>Σφάλμα φόρτωσης</h2>
-        <p>Η σελίδα δεν βρέθηκε. <a href="${BASE_PATH}" data-link>Επιστροφή στην αρχική</a></p>
-      </div>
-    `;
+    // Redirect to home if page not found
+    if (location.pathname !== BASE_PATH) {
+      history.replaceState(null, '', BASE_PATH);
+      loadPage(BASE_PATH);
+    }
   }
 }
 
