@@ -2,25 +2,70 @@
 <html lang="el">
   <head>
     <meta charset="UTF-8" />
+    <link rel="canonical" href="https://pestxperts.gr" />
     <link rel="icon" type="image/svg+xml" href="/assets/svg/layer1.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="PestXperts - Επαγγελματική καταπολέμηση παρασίτων στην Ελλάδα" />
-    <meta name="keywords" content="απεντόμωση, μυοκτονία, απολύμανση, παράσιτα" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Απεντομώσεις, απολυμάνσεις και μυοκτονίες σε Αθήνα και Αττική από την Pestxperts. Άμεση εξυπηρέτηση, εγγυημένα αποτελέσματα, πιστοποιημένες υπηρεσίες. Διαθέσιμοι 24/7 για επείγοντα περιστατικά." />
+    <meta name="keywords" content="απεντόμωση, μυοκτονία, απολύμανση, παράσιτα, Νίκαια, Αθήνα, Πειραιάς, Αττική, επείγοντα περιστατικά, άμεση εξυπηρέτηση, επαγγελματική απολύμανση, καθαρισμός, απολύμανση για παράσιτα, μυοκτονία για σπίτια, απολύμανση για καταστήματα,  εξυπηρέτηση 24/7, απολύμανση για έντομα, επαγγελματίες απεντόμωσης, καθαρισμός παρασίτων, εξόντωση παρασίτων, έλεγχος παρασίτων, προστασία από παράσιτα, λύσεις για παράσιτα, εξειδικευμένη απολύμανση, οικολογική απολύμανση, χωρίς χημικά, πιστοποιημένες υπηρεσίες, πρόληψη παρασίτων, γρήγορη απολύμανση, σύγχρονη τεχνολογία απολύμανσης, ασφαλής απολύμανση, απολύμανση και μυοκτονία για σπίτια, επιχειρήσεις και καταστήματα, pestxperts, IPM, Integrated Pest Management, Κωνσταντίνος Πρεβεζιανός, τεχνολόγος γεωπόνος, Ολοκληρωμένη Διαχείριση Παρασίτων, Ο.Δ.Π." />
 
-    <title>PestXperts</title>
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="PestXperts | Απεντομώσεις - Απολυμάνσεις - Μυοκτονίες">
+    <meta property="og:description" content="Απεντομώσεις, απολυμάνσεις και μυοκτονίες σε Αθήνα και Αττική από την Pestxperts. Άμεση εξυπηρέτηση, εγγυημένα αποτελέσματα, πιστοποιημένες υπηρεσίες." />
+    <meta property="og:image" content="https://pestxperts.gr/assets/img/logo-og-final.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <title>PestXperts | Απεντομώσεις - Απολυμάνσεις - Μυοκτονίες</title>
+    <link rel="stylesheet" href="./src/style.css">
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "PestXperts",
+        "url": "https://pestxperts.gr",
+        "telephone": "+306978102685",
+         "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ηλιουπόλεως 10",
+        "addressLocality": "Νίκαια",
+        "addressRegion": "Πειραιάς",
+        "postalCode": "18450",
+        "addressCountry": "GR"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61556143096333",
+          "https://www.instagram.com/pestxperts.gr"
+        ],
+        "logo": "https://pestxperts.gr/assets/svg/layer1.svg"
+      }
+    </script>
+    <meta name="google-site-verification" content="jEYBp5iF4EfMMTs9angF4uLfXxY3kJuJkkN9EcEFEuQ" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7F185Q7YGW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7F185Q7YGW');
+    </script>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <div id="header"></div>
     
 
-    <main>
-        <div id="app"></div>
+    <main class="w-screen mt-1">
+        <div id="app" class="w-full max-w-none"></div>
     </main>
 
     <div id="footer"></div>
+    
 
+   
     <script type="module" src="/src/main.js"></script>
+    
   </body>
 </html>

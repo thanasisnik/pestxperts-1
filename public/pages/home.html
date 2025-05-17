@@ -1,18 +1,18 @@
-<section id="hero-section" class="overflow-hidden bg-white sm:grid sm:grid-cols-2 sm:items-center md:pt-2">
+<section id="hero-section" aria-labelledby="hero-heading"  class="overflow-hidden bg-white sm:grid sm:grid-cols-2 sm:items-center md:pt-3">
   <!-- Left column with text -->
   <div class="p-8 md:p-12 lg:px-16 lg:py-24">
     <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-      <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+      <h1 id="hero-heading" class="text-2xl font-bold text-green-900 md:text-3xl animate-bounce-3s">
         Καλώς ήρθατε στην PestXperts
-      </h2>
+      </h1>
       
       
-      <p class="text-gray-500 mt-4 hidden md:block">
+      <p class="text-gray-800 mt-4 hidden md:block md:text-lg text-base">
         Η PestXperts είναι μια καινοτόμος και δυναμική εταιρεία που εξειδικεύεται στην καταπολέμηση παρασίτων, μυοκτονία και απολύμανση. Με στόχο την παροχή αποτελεσματικών και ασφαλών λύσεων, προσφέρουμε υπηρεσίες υψηλής ποιότητας για κατοικίες, επιχειρήσεις και χώρους υγειονομικού ενδιαφέροντος.
       </p>
       
       <div class="mt-4 md:mt-8">
-        <a onclick="navigateTo('contact')"  class="inline-block rounded-sm bg-logoGold px-12 py-3 text-sm font-medium text-white transition hover:bg-logoGoldDark focus:ring-3 focus:ring-logoGold focus:outline-hidden hover:cursor-pointer">
+        <a role="button" aria-label="Μετάβαση στην ενότητα επικοινωνίας"  onclick="navigateTo('contact')"  class="inline-block rounded-sm bg-logoGold px-12 py-3 text-sm font-medium text-white transition hover:bg-logoGoldDark focus:ring-3 focus:ring-logoGold focus:outline-hidden hover:cursor-pointer">
           Επικοινωνία
         </a>
       </div>
@@ -20,144 +20,506 @@
   </div>
   
   <!--  carousel -->
-  <div class="relative sm:order-2 w-full mx-auto h-[300px] sm:h-[500px]">
-    <div class="carousel relative w-full h-full">
+  <div class="relative sm:order-2 w-full mx-auto aspect-[16/9]">
+    <div class="carousel relative w-full h-full" role="region" aria-roledescription="carousel" aria-label="Εικόνες από υπηρεσίες PestXperts">
       <div class="carousel-inner relative overflow-hidden w-full h-full">
         <!-- Slide 1 -->
         <div class="carousel-item active absolute w-full h-full transition-opacity duration-700">
-          <img src="/assets/img/1000011905.jpg" class="w-full h-full object-cover sm:rounded-ss-[30px] md:rounded-ss-[60px]" alt="Pest control service">
+          <img src="../assets/img/apolplak.jpg" class="w-full h-full object-cover sm:rounded-ss-[30px] md:rounded-ss-[60px]" alt="Pest control service">
         </div>
         <!-- Slide 2 -->
         <div class="carousel-item absolute w-full h-full transition-opacity duration-700 opacity-0">
-          <img src="/assets/img/covid-19-5010565_640.jpg" class="w-full h-full object-cover sm:rounded-ss-[30px] md:rounded-ss-[60px]" alt="Disinfection service">
+          <img src="../assets/img/covid-19-5010565_640.jpg" class="w-full h-full object-cover sm:rounded-ss-[30px] md:rounded-ss-[60px]" alt="Disinfection service">
         </div>
         <!-- Slide 3 -->
         <div class="carousel-item absolute w-full h-full transition-opacity duration-700 opacity-0">
-          <img src="/assets/img/1000011905.jpg" class="w-full h-full object-cover sm:rounded-ss-[30px] md:rounded-ss-[60px]" alt="Pest control professional">
+          <img src="../assets/img/warehouseapol.jpg" class="w-full h-full object-cover sm:rounded-ss-[30px] md:rounded-ss-[60px]" alt="Pest control professional">
         </div>
       </div>
       
       <!-- Controls -->
-      <button id="prevBtn" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 hover:bg-opacity-70 text-white px-3 py-1 rounded-full transition duration-200">❮</button>
-      <button id="nextBtn" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 hover:bg-opacity-70 text-white px-3 py-1 rounded-full transition duration-200">❯</button>
+      <button id="prevBtn" aria-label="Προηγούμενη εικόνα" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 hover:bg-opacity-70 text-white px-3 py-1 rounded-full transition duration-200">❮</button>
+      <button id="nextBtn" aria-label="Επόμενη εικόνα" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 hover:bg-opacity-70 text-white px-3 py-1 rounded-full transition duration-200">❯</button>
     </div>
   </div>
   
   
-  <p class="mt-4 mx-auto px-3 text-center text-gray-500 block sm:hidden">
-    Η PestXperts είναι μια καινοτόμος και δυναμική εταιρεία που εξειδικεύεται στην καταπολέμηση παρασίτων, μυοκτονία και απολύμανση. Με στόχο την παροχή αποτελεσματικών και ασφαλών λύσεων, προσφέρουμε υπηρεσίες υψηλής ποιότητας για κατοικίες, επιχειρήσεις και χώρους υγειονομικού ενδιαφέροντος.
+  <p class="mt-5 px-6 text-center  text-gray-600  block sm:hidden">
+    Η PestXperts είναι μια καινοτόμος και δυναμική εταιρεία, εξειδικευμένη στην καταπολέμηση παρασίτων, τη μυοκτονία και την απολύμανση. Με στόχο την παροχή αποτελεσματικών και ασφαλών λύσεων, προσφέρουμε υπηρεσίες υψηλής ποιότητας για κατοικίες, επιχειρήσεις και χώρους υγειονομικού ενδιαφέροντος.
   </p>
 </section>
 
       
-      <div class="container mx-auto px-26 py-16 mt-2 bg-myblack2 text-white 
-                  
-                  md:rounded-4xl  
-                  lg:rounded-r-full lg:mx-0">
-        <div class="text-center mb-8">
-          <h2 class="text-3xl font-bold text-white mb-4">Ολοκληρωμένη Διαχείριση Παρασίτων (IPM)</h2>
-          <p class="text-lg text-white">Προσφέρουμε μια σύγχρονη και αποτελεσματική προσέγγιση στην αντιμετώπιση παρασίτων, συνδυάζοντας τεχνικές πρόληψης, παρακολούθησης και καταστολής με σεβασμό στο περιβάλλον.</p>
-        </div>
-        <div class="grid gap-8 md:grid-cols-2">
-          <div class="flex flex-col justify-center space-y-6">
-            <h3 class="text-2xl font-semibold text-white mb-2 text-center md:text-left ">
-              Τι Είναι το IPM;
-            </h3>
-            <p class="text-white text-center md:text-left">Το IPM είναι μια στρατηγική διαχείρισης που συνδυάζει διαφορετικές μεθόδους για την αποτελεσματική και βιώσιμη καταπολέμηση παρασίτων, ελαχιστοποιώντας τις επιπτώσεις στο περιβάλλον.</p>
-            <h3 class="text-2xl font-semibold text-white mb-2 text-center md:text-left">Τα Βήματα μας:</h3>
-            <ul class="space-y-4">
-              <li class="flex items-center space-x-3">
-                <img src="./assets/svg/g783.svg" alt="Αξιολόγηση του προβλήματος" class="w-6 h-6">
-                <span class="text-white">Αξιολόγηση του προβλήματος και ανάλυση κινδύνων</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <img src="./assets/svg/g783.svg" alt="Πρόληψη" class="w-6 h-6">
-                <span class="text-white">Πρόληψη με κατάλληλα μέτρα προστασίας</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <img src="./assets/svg/g783.svg" alt="Παρακολούθηση" class="w-6 h-6">
-                <span class="text-white">Παρακολούθηση και αναγνώριση παρασίτων</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <img src="./assets/svg/g783.svg" alt="Καταπολέμηση" class="w-6 h-6">
-                <span class="text-white">Στοχευμένες ενέργειες καταπολέμησης</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <img src="./assets/svg/g783.svg" alt="Αξιολόγηση αποτελεσματικότητας" class="w-6 h-6">
-                <span class="text-white">Αξιολόγηση αποτελεσματικότητας και συνεχής βελτίωση</span>
-              </li>
-            </ul>
-          </div>
-          
-        </div>
+<div class="w-full bg-gradient-to-b from-myblack2 to-gray-900 text-white py-16 px-6 mt-5 md:mt-0" role="region" aria-labelledby="ipm-title">
+  <div class="max-w-4xl mx-auto space-y-12">
+
+    <div class="text-center space-y-4">
+      <h2 id="ipm-title" class="text-4xl font-extrabold tracking-tight text-green-500">Ολοκληρωμένη Διαχείριση Παρασίτων (IPM)</h2>
+      <p class="text-lg text-gray-300">Σύγχρονη και αποτελεσματική προσέγγιση με σεβασμό στο περιβάλλον — πρόληψη, παρακολούθηση και καταστολή.</p>
+    </div>
+
+    <div class="space-y-10 text-gray-100">
+
+      <div class="space-y-3">
+        <h3 class="text-2xl font-semibold text-white border-b border-gray-700 pb-2">Τι Είναι το IPM;</h3>
+        <p class="leading-relaxed">Το Integrated Pest Management είναι μια στρατηγική διαχείρισης που συνδυάζει πολλαπλές τεχνικές για βιώσιμη καταπολέμηση παρασίτων, με ελαχιστοποίηση των περιβαλλοντικών επιπτώσεων.</p>
       </div>
+
+      <div class="space-y-6">
+        <h3 class="text-2xl font-semibold text-white border-b border-gray-700 pb-2">Τα Βήματα μας</h3>
+        <ul class="space-y-4" aria-label="Βήματα της διαδικασίας IPM">
+          <li class="flex items-start space-x-4 bg-gray-800 bg-opacity-50 p-4 rounded-xl shadow-sm">
+            <img src="./assets/svg/g783.svg" alt="Στάδιο IPM" class="w-6 h-6 mt-1">
+            <span>Αξιολόγηση του προβλήματος και ανάλυση κινδύνων</span>
+          </li>
+          <li class="flex items-start space-x-4 bg-gray-800 bg-opacity-50 p-4 rounded-xl shadow-sm">
+            <img src="./assets/svg/g783.svg" alt="Στάδιο IPM" class="w-6 h-6 mt-1">
+            <span>Πρόληψη με κατάλληλα μέτρα προστασίας</span>
+          </li>
+          <li class="flex items-start space-x-4 bg-gray-800 bg-opacity-50 p-4 rounded-xl shadow-sm">
+            <img src="./assets/svg/g783.svg" alt="Στάδιο IPM" class="w-6 h-6 mt-1">
+            <span>Παρακολούθηση και αναγνώριση παρασίτων</span>
+          </li>
+          <li class="flex items-start space-x-4 bg-gray-800 bg-opacity-50 p-4 rounded-xl shadow-sm">
+            <img src="./assets/svg/g783.svg" alt="Στάδιο IPM" class="w-6 h-6 mt-1">
+            <span>Στοχευμένες ενέργειες καταπολέμησης</span>
+          </li>
+          <li class="flex items-start space-x-4 bg-gray-800 bg-opacity-50 p-4 rounded-xl shadow-sm">
+            <img src="./assets/svg/g783.svg" alt="Στάδιο IPM" class="w-6 h-6 mt-1">
+            <span>Αξιολόγηση αποτελεσματικότητας και συνεχής βελτίωση</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
       
     
 
       
       <!-- Services Section -->
-      <section class="bg-white">
+      <div class="bg-white mx-auto gap-4">
         <h2 class="text-3xl font-bold text-gray-800 text-center pt-10 mb-4">
           Υπηρεσίες
         </h2>
         <div class="w-16 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 my-4 mx-auto"></div>
-        <section class="flex flex-col justify-between md:flex-row items-center mx-16 my-12">
+        <div class="flex flex-col m-10 justify-between md:flex-row items-center mx-16 my-12 gap-6">
           
-          <div class="card bg-gray-100 w-96 shadow-2xl rounded-xl p-4 m-4">
-            <figure class="px-10 pt-10 w-full h-72 flex justify-center items-center overflow-hidden">
-              <img
-                src="./assets/img/openart-image_sv_APBCi_1743678414507_raw.jpg"
-                alt="Mice"
-                class="w-full h-full object-cover rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title text-xl my-2">Μυοκτονία</h2>
-              <p class="text-gray-500">Πρόληψη και καταπολέμηση. Απαλλαγή από ποντίκια και αρουραίους.</p>
+         <!-- Card 1 -->
+         <div class="card bg-gray-100 w-full md:w-80 lg:w-96 shadow-2xl rounded-xl p-4 relative">
+          <figure class="aspect-square w-full flex justify-center items-center overflow-hidden">
+            <img
+              src="../assets/img/mice.jpg"
+              alt="Mice"
+              class="w-11/12 h-full object-cover rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center p-4">
+            <h2 class="card-title text-xl my-2">Μυοκτονία</h2>
+            <p class="text-gray-500 text-sm lg:text-base">Πρόληψη και καταπολέμηση. Απαλλαγή από ποντίκια και αρουραίους.</p>
+          </div>
+
+          <!-- Κουμπί με το νέο modal -->
+           <div class=" flex justify-center mt-2">
+<!-- Χρήση data-attribute --><button 
+                       data-modal-open="mice_modal"  
+                       class="btn bg-logoGold rounded-md hover:text-white hover:scale-110 duration-200 py-2 px-4 cursor-pointer"
+                       >
+                        Περισσότερα
+                      </button>
+           </div>
+          
+        </div>
+
+        <!-- Modal (προσαρμοσμένο για την κάρτα) -->
+        <div id="mice_modal" class="modal fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-sm transition-opacity hidden duration-300 overflow-y-auto">         
+          <div class="fixed inset-0 bg-black/50 cursor-pointer" data-modal-close></div>
+          
+          <!-- Κύριο modal -->
+          <div class="relative z-50 w-full max-w-4xl  max-h-[90vh] my-4 rounded-2xl bg-white shadow-2xl  transition-all duration-300 transform scale-95 overflow-y-auto">
+            <!-- Header -->
+            <div class="flex justify-between items-center p-4 border-b bg-gradient-to-r from-logoGold to-yellow-400 sticky top-0">
+              <h3 class="text-xl font-bold text-white">Μυοκτονία</h3>
+              <button 
+                data-modal-close
+                class="text-white hover:text-gray-200 text-2xl leading-none"
+              >
+                &times;
+              </button>
+            </div>
+            
+            <!-- Σώμα modal -->
+            <div class="flex flex-col md:flex-row">
+              <!-- Εικόνα από την κάρτα (με full-height) -->
+              <div class="md:w-1/3">
+                <img 
+                  src="../assets/img/mice.jpg" 
+                  alt="Μυοκτονία"
+                  class="w-full h-48 md:h-full object-cover"
+                />
+              </div>
+              
+              <!-- Περιεχόμενο -->
+              <div class="md:w-2/3 p-6">
+                <div class="space-y-4">
+                  <!-- Features -->
+                  <div class="flex items-start">
+                    <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-left text-gray-800">Αποτελεσματική Λύση</h4>
+                      <p class="text-gray-600 text-left text-sm">Αποτέλεσμα εντός 24 ωρών</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start">
+                    <div class="bg-green-100 p-3 rounded-full mr-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-left text-gray-800">Ασφαλής</h4>
+                      <p class="text-gray-600 text-left text-sm">Χωρίς κίνδυνο για ανθρώπους/κατοικίδια</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Περιγραφή -->
+                <div class="mt-6 border-t pt-4">
+                  <p class="text-gray-700 mb-4">Η <strong>PestXperts</strong> προσφέρει υπηρεσίες επαγγελματικής πρόληψης και καταπολέμησης ποντικιών και αρουραίων
+                     με τις πιο σύγχρονες μεθόδους. Τα τρωκτικά μεταδίδουν σοβαρές ασθένειες,
+                      όπως Λεπτοσπείρωση, Σαλμονέλα και Τυφοειδή Λοίμωξη.</p>
+                      
+                  <p class="text-left font-semibold text-base text-gray-800 pb-2">Χρησιμοποιούμε:</p>
+                  
+                  <ul class="list-disc pl-4 text-left text-gray-600 space-y-2 mb-6">
+                    <li>Δολωματικούς Σταθμούς με εγκεκριμένα τρωκτικοκτόνα</li>
+                    <li>Σύγχρονες τεχνικές παρέμβασης</li>
+                    <li>Συνδυασμός χημικών και ατοξικών μεθόδων</li>
+                    <li>Εγγύηση αποτελέσματος</li>
+                    <li>Επαγγελματικό εξοπλισμό</li>
+                  </ul>
+                  <div class="bg-red-50 rounded-xl gap-4 p-4">
+                    <h5 class="text-gray-800 text-base font-semibold text-left ">Αντιμετώπιση των πιο συχνών ειδών:</h5>
+                    <p >Mus musculus (Οικιακό ποντίκι), Rattus rattus (Μαύρος αρουραίος),
+                      Rattus norvegicus (Καφέ αρουραίος)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="bg-gray-50 px-6 py-4 flex justify-end space-x-3 border-t">
+              <button 
+                data-modal-close
+                class="px-4 py-2 text-gray-600 hover:text-gray-800 font-medium"
+              >
+                Κλείσιμο
+              </button>
+              <button 
+                onclick="navigateTo('contact')"
+                class="px-6 py-2 bg-logoGold hover:bg-logoGoldDark text-white font-medium
+                rounded-md shadow hover:shadow-md transition"
+              >
+                Κλείστε Ραντεβού
+              </button>
             </div>
           </div>
+        </div>
   
-          <div class="card bg-gray-100 w-96 shadow-2xl rounded-xl p-4 m-4">
-            <figure class="px-10 pt-10 w-full h-72 flex justify-center items-center overflow-hidden">
+          <div class="card bg-gray-100 w-full md:w-80 lg:w-96 shadow-2xl rounded-xl p-4 relative">
+            <figure class="aspect-square w-full flex justify-center items-center overflow-hidden">
               <img
-                src="./assets/img/matheus-ferreira-eBcUgeRA6GU-unsplash.jpg"
-                alt="Shoes"
-                class="w-full h-full object-cover rounded-xl" />
+                src="../assets/img/pest.jpg"
+                alt="Κατσαρίδα"
+                class="w-11/12 h-full object-cover rounded-xl" />
             </figure>
-          <div class="card-body items-center text-center">
+            <div class="card-body items-center text-center p-4">
               <h2 class="card-title text-xl my-2">Απεντόμωση</h2>
-              <p class="text-gray-500">κατσαρίδες, κουνούπια, κοριοί, ψύλλοι, μυρμήγκια, μύγες, σκουλήκια, ακάρεα</p>
+              <p class="text-gray-500 text-sm lg:text-base">κατσαρίδες, κουνούπια, κοριοί, ψύλλοι, μυρμήγκια, μύγες, σκουλήκια, ακάρεα</p>
+            </div>
+
+            <div class="flex justify-center mt-2">
+              <button id="pest_modal_btn"
+              data-modal-open="pest_modal" class="btn bg-logoGold rounded-md hover:text-white hover:scale-110 duration-200
+              py-2 px-4 cursor-pointer" >Περισσότερα</button>
+            </div>
+            
+          </div>
+
+          <div id="pest_modal" class="modal fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-sm transition-opacity hidden duration-300 ">
+            <div class="fixed inset-0 bg-black/50 cursor-pointer" data-modal-close></div>
+            
+            <div class="relative z-50 w-full max-w-6xl max-h-[80vh] rounded-2xl bg-white shadow-2xl overflow-hidden flex flex-col transition-all duration-300 scale-95">
+              <!-- header -->
+              <div class="flex-shrink-0 flex justify-between items-center p-4 border-b bg-gradient-to-r from-logoGold to-yellow-400">
+                <h3 class="text-xl font-bold text-white">Απεντόμωση</h3>
+                <button data-modal-close class="text-white hover:text-gray-200 text-2xl leading-none">&times;</button>
+              </div>
+          
+              <!-- body - this is the scrollable part -->
+              <div class="flex-1 overflow-y-auto">
+                <div class="flex flex-col md:flex-row">
+                  <div class="md:w-1/3">
+                    <img src="../assets/img/pest.jpg" alt="Κατσαρίδα"
+                    class="w-full h-48 md:h-full object-cover"
+                    >
+                  </div>
+          
+                  <div class="md:w-2/3 p-4">
+                    <div class="space-y-4">
+                      <!-- Features -->
+                      <div class="flex items-start">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-left text-gray-800">Αποτελεσματική Λύση</h4>
+                          <p class="text-gray-600 text-left text-sm">Αποτέλεσμα εντός 24 ωρών</p>
+                        </div>
+                      </div>
+          
+                      <div class="flex items-start">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-left text-gray-800">Ασφαλής</h4>
+                          <p class="text-gray-600 text-left text-sm">Χωρίς κίνδυνο για ανθρώπους/κατοικίδια</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                      <!-- Περιγραφή -->
+                      <div class="mt-6 border-t pt-4">
+                      <p class="text-gray-700 mb-4">
+                        Η Απεντόμωση είναι η διαδικασία ελέγχου και εξάλειψης εντόμων που εισβάλλουν σε κατοικίες, επαγγελματικούς χώρους ή βιομηχανικά κτίρια, προκαλώντας προβλήματα υγιεινής, φθορές σε δομές και αποθέματα, αλλά και σοβαρούς κινδύνους για τη δημόσια υγεία.
+                      </p>
+                      <p class="text-gray-700 mb-4">
+                        Στην <strong>PestXperts</strong> εφαρμόζουμε εξειδικευμένα προγράμματα απεντόμωσης, προσαρμοσμένα στις ανάγκες κάθε χώρου, με στόχο την άμεση αντιμετώπιση και μακροχρόνια πρόληψη της παρουσίας επιβλαβών οργανισμών.
+                      </p>
+                      
+                      <p class="text-left text-lg font-semibold text-gray-800 pb-2">Γιατί είναι απαραίτητη η Απεντόμωση;</p>
+                      <ul class="list-disc pl-4 text-left text-gray-600 space-y-2 mb-6">
+                        <li>Για την προστασία της δημόσιας υγείας, ειδικά σε χώρους μαζικής εστίασης, υγειονομικού ενδιαφέροντος, ξενοδοχειακές μονάδες και αποθήκες τροφίμων.
+                        </li>
+                        <li>Για την πρόληψη ζημιών σε κτίρια, εγκαταστάσεις και προϊόντα από ξυλοφάγα ή υγειονομικής σημασίας έντομα.</li>
+                        <li>Για τη συμμόρφωση με τις απαιτήσεις της νομοθεσίας και των υγειονομικών αρχών, σε επαγγελματικούς και βιομηχανικούς χώρους.
+                        </li>
+                        <li>Για τη βελτίωση της καθημερινότητας και της αίσθησης ασφάλειας σε οικιακά περιβάλλοντα.</li>
+                      </ul>
+          
+                      <p class="text-left text-lg font-semibold text-gray-800 pb-2">Σε ποιους απευθυνόμαστε:</p>
+                      <ul class="list-disc pl-4 text-left text-gray-600 space-y-2 mb-6">
+                        <li>Ιδιώτες (κατοικίες, πολυκατοικίες, εξοχικά)</li>
+                        <li>Διαχειριστές και ιδιοκτήτες Airbnb και τουριστικών καταλυμάτων</li>
+                        <li>Επιχειρήσεις εστίασης (εστιατόρια, καφετέριες, Catering)</li>
+                        <li>Ξενοδοχεία και τουριστικές μονάδες.</li>
+                        <li>Σούπερ μάρκετ και καταστήματα λιανικής</li>
+                        <li>Βιομηχανίες τροφίμων και αποθήκες</li>
+                        <li>Δημόσιους οργανισμούς, σχολεία, δήμους και υπηρεσίες</li>
+                      </ul>
+                      <div class="mt-4">
+                        <p class="text-left text-lg font-semibold text-gray-800 pb-2">Ποια έντομα καταπολεμούμε:</p>
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                          <p class="text-gray-700">Κατσαρίδες, μυρμήγκια, κουνούπια, κοριούς, ψύλλους, ακάρεα, τερμίτες, σφήκες, μύγες, σαράκι, αράχνες, σκορπιούς, σαρανταποδαρούσες, ψαλίδες, ψαράκια και άλλα παράσιτα υγειονομικής σημασίας.</p>
+                        </div>
+                      </div>
+                      
+                      <div class="mt-4">
+                        <p class="text-left text-lg font-semibold text-gray-800 pb-2">Η μεθοδολογία μας:</p>
+                        <ul class="list-disc pl-4 text-left text-gray-600 space-y-2 mb-6">
+                          <li>Αυστηρή επιθεώρηση και εντοπισμός εστιών</li>
+                          <li>Χρήση εγκεκριμένων σκευασμάτων χαμηλής τοξικότητας</li>
+                          <li>Εφαρμογές gel, ψεκασμοί, νεφελοψεκασμοί, παγίδες και θερμικές τεχνικές</li>
+                          <li>Πρόγραμμα επαναλήψεων και πρόληψης προσαρμοσμένο στις ανάγκες του χώρου</li>
+                        </ul>
+                      </div>
+                      <div class="bg-green-50 rounded-2xl w-full p-2 flex flex-col gap-2  border-t-4">
+                        <h4 class="font-semibold text-lg text-gray-800">Η PestXperts συνδυάζει την τεχνική κατάρτιση με τη σύγχρονη τεχνογνωσία, προσφέροντας ασφαλείς και αποτελεσματικές λύσεις για κάθε πρόβλημα απεντόμωσης.</h4>
+                        <h5 class="font-semibold text-lg text-gray-800" >Καλέστε μας για άμεση εξυπηρέτηση σε όλη την Αττική!</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Footer -->
+              <div class="flex-shrink-0 bg-gray-50 px-6 py-4 flex justify-end space-x-3 border-t">
+                <button 
+                  data-modal-close
+                  class="px-4 py-2 text-gray-600 hover:text-gray-800 font-medium"
+                >
+                  Κλείσιμο
+                </button>
+                <button 
+                onclick="navigateTo('contact')"
+                  class="px-6 py-2 bg-logoGold hover:bg-logoGoldDark text-white font-medium
+                  rounded-md shadow hover:shadow-md transition"
+                >
+                  Κλείστε Ραντεβού
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card bg-gray-100 w-full md:w-80 lg:w-96 shadow-2xl rounded-xl p-4">
+            <figure class="aspect-square w-full flex justify-center items-center overflow-hidden">
+              <img
+                src="../assets/img/mikrovia2.jpg"
+                alt="Βακτήρια"
+                class="w-11/12 h-full object-cover rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center p-4">
+              <h2 class="card-title text-xl my-2">Απολύμανση</h2>
+              <p class="text-gray-500 text-sm lg:text-base">μικρόβια, ιοί, βακτήρια – κατάλληλο για οικίες, επιχειρήσεις, σχολεία, νοσοκομεία</p>
+            </div>
+
+            <!-- Κουμπί με το νέο modal -->
+            <div class=" flex justify-center mt-2">
+              <!-- Χρήση data-attribute -->
+              <button 
+                    data-modal-open="apol_modal"  
+                    class="btn bg-logoGold rounded-md hover:text-white hover:scale-110 duration-200 py-2 px-4 cursor-pointer"
+                    >
+                    Περισσότερα
+              </button>
+            </div>
+            
+          </div>
+
+          <!-- Modal (προσαρμοσμένο για την κάρτα) -->
+          <div id="apol_modal" class="modal fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-sm transition-opacity hidden duration-300 overflow-y-auto">         
+            <div class="fixed inset-0 bg-black/50 cursor-pointer" data-modal-close></div>
+            
+            <!-- Κύριο modal -->
+            <div class="relative z-50 w-full max-w-4xl rounded-2xl bg-white shadow-2xl overflow-hidden transition-all duration-300 transform scale-95 overflow-y-auto">
+              <!-- Header -->
+              <div class="flex justify-between items-center p-4 border-b bg-gradient-to-r from-logoGold to-yellow-400">
+                <h3 class="text-xl font-bold text-white">Απολύμανση</h3>
+                <button 
+                  data-modal-close
+                  class="text-white hover:text-gray-200 text-2xl leading-none"
+                >
+                  &times;
+                </button>
+              </div>
+              
+              <!-- Σώμα modal -->
+              <div class="flex flex-col md:flex-row">
+                <!-- Εικόνα από την κάρτα (με full-height) -->
+                <div class="md:w-1/3">
+                  <img 
+                    src="../assets/img/mikrovia2.jpg" 
+                    alt="Απολύμανση"
+                    class="w-full h-48 md:h-full object-cover"
+                  />
+                </div>
+                
+                <!-- Περιεχόμενο -->
+                <div class="md:w-2/3 p-6">
+                  <div class="space-y-4">
+                    <!-- Features -->
+                    <div class="flex items-start">
+                      <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-semibold text-left text-gray-800">Αποτελεσματική Λύση</h4>
+                        <p class="text-gray-600 text-left text-sm">Αποτέλεσμα εντός 24 ωρών</p>
+                      </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                      <div class="bg-green-100 p-3 rounded-full mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 class="font-semibold text-left text-gray-800">Ασφαλής</h4>
+                        <p class="text-gray-600 text-left text-sm">Χωρίς κίνδυνο για ανθρώπους/κατοικίδια</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Περιγραφή -->
+                  <div class="mt-6 border-t pt-4">
+                    <p class="text-gray-700 mb-4">Η <strong>PestXperts</strong> προσφέρει υπηρεσίες απολύμανσης για την εξουδετέρωση παθογόνων μικροοργανισμών (βακτηρίων, ιών, μυκήτων) σε κάθε τύπο χώρου, όπως κατοικίες, επαγγελματικές εγκαταστάσεις, αποθήκες, σχολεία και επιχειρήσεις υγειονομικού ενδιαφέροντος.</p>
+                    <p class="text-left text-base font-semibold text-gray-800 pb-2">Μέθοδοι:</p>
+                    <ul class="list-disc pl-4 text-left text-gray-600 space-y-2 mb-6">
+                      <li>Ψεκασμό χαμηλής πίεσης ή εκνέφωση (νεφελοψεκασμό)</li>
+                      <li>Εστιασμένη εφαρμογή σε κρίσιμα σημεία (λαβές, διακόπτες, WC, κοινόχρηστοι χώροι).</li>
+                    </ul>
+                      <p class="text-left text-base font-semibold text-gray-800 pb-2">Η απολύμανση είναι απαραίτητη:</p>
+                    <ul class="list-disc pl-4 text-left text-gray-600 space-y-2 mb-6">
+                      <li>Σε χώρους με αυξημένη κυκλοφορία ατόμων</li>
+                      <li>Μετά από κρούσματα ασθένειας</li>
+                      <li>Προληπτικά, στο πλαίσιο της υγειονομικής πολιτικής μιας επιχείρησης</li>
+                    </ul>
+                    <div class="bg-green-50 rounded-lg border-t-4 gap-4 p-4 mt-2">
+                      <p>Χρησιμοποιούνται εγκεκριμένα απολυμαντικά σκευάσματα από τον Ε.Ο.Φ. κατάλληλα για χρήση σε εσωτερικούς χώρους, με υψηλή μικροβιοκτόνο δράση και ασφάλεια για τον άνθρωπο και το περιβάλλον.</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Footer -->
+              <div class="bg-gray-50 px-6 py-4 flex justify-end space-x-3 border-t">
+                <button 
+                  data-modal-close
+                  class="px-4 py-2 text-gray-600 hover:text-gray-800 font-medium"
+                >
+                  Κλείσιμο
+                </button>
+                <button 
+                  onclick="navigateTo('contact')"
+                  class="px-6 py-2 bg-logoGold hover:bg-logoGoldDark text-white font-medium
+                  rounded-md shadow hover:shadow-md transition"
+                >
+                  Κλείστε Ραντεβού
+                </button>
+              </div>
             </div>
           </div>
   
-          <div class="card bg-gray-100 w-96 shadow-2xl rounded-xl p-4 m-4">
-            <figure class="px-10 pt-10 w-full h-72 flex justify-center items-center overflow-hidden">
-              <img
-                src="./assets/img/covid-19-5010565_640.jpg"
-                alt="Shoes"
-                class="w-full h-full object-cover rounded-xl" />
-            </figure>
-          <div class="card-body items-center text-center">
-              <h2 class="card-title text-xl my-2">Απολύμανση</h2>
-              <p class="text-gray-500">μικρόβια, ιοί, βακτήρια – κατάλληλο για οικίες, επιχειρήσεις, σχολεία, νοσοκομεία</p>
-            </div>
-          </div>
-        </section>
-        <div class="flex justify-center m-1 p-1">
           
-            <button type="button" onclick="navigateTo('services')" class="text-yellow-400 hover:text-white border border-yellow-400
-            hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 
-            font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 mt-2">
-             Περισσότερα</button>
+        </div>
+        <div class="flex justify-center m-2 p-2">
+          
+          <button 
+          type="button" 
+          onclick="navigateTo('services')" 
+          class="bg-yellow-400 hover:bg-yellow-500  text-gray-900 hover:text-white 
+                 border border-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300/50 
+                 font-medium rounded-lg text-lg px-6 py-3 text-center me-2 mb-2 mt-2 md:mt-12
+                 transition-colors duration-200 shadow-sm hover:shadow-md"
+        >
+          Λοιπές Υπηρεσίες
+        </button>
   
         </div>
-      </section>
+      </div>
             
-      <section class="bg-white py-16 px-6 text-center">
+      <section class="bg-white mt-6 py-16 px-6 text-center">
         <div class="max-w-4xl mx-auto">
             <blockquote class="text-2xl italic font-semibold text-gray-800 mb-8">
-                "Η Ολοκληρωμένη Διαχείριση Παρασίτων δεν είναι απλώς μια υπηρεσία. Είναι μια δέσμευση για ασφάλεια, υγιεινή και ποιότητα ζωής."
+                "Η Ολοκληρωμένη Διαχείριση Παρασίτων δεν είναι απλώς μια υπηρεσία. Είναι η δέσμευσή μας για την ασφάλεια, την υγιεινή και την ποιότητα της δικής σας ζωής."
             </blockquote>
-            <button type="button" onclick="navigateTo('contact')" class="mt-4 bg-logoGold text-white py-2 px-6 rounded-2xl hover:bg-logoGoldDark transition duration-300">
+            <button type="button" onclick="navigateTo('contact')" 
+            class="mt-4 border-green-500 bg-green-600 text-white text-lg py-3 px-7 rounded-2xl hover:bg-green-700 transition duration-300">
                 Επικοινωνήστε μαζί μας
             </button>
         </div>
@@ -169,15 +531,15 @@
         <div class="flex flex-col lg:flex-row items-center space-x-0 lg:space-x-5">
           
           <div class="flex-shrink-0 mb-6 lg:mb-0">
-            <img src="./assets/img/1000011905.jpg" alt="Κωνσταντίνος Πρεβεζιάνος" class="w-72 h-72 rounded-full object-cover">
+            <img src="../assets/img/apolplak.jpg" alt="Πορτρέτο του Κωνσταντίνου Πρεβεζιάνου, Ιδρυτή της PestXperts" class="w-72 h-72 rounded-full object-cover">
           </div>
           
-          <div class="flex-1">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-4 text-center">Ο Ιδρυτής της PestXperts</h2>
-            <p class="text-lg text-gray-600 mb-4 text-center">Η PestXperts ιδρύθηκε από τον Κωνσταντίνο Πρεβεζιάνο, Τεχνολόγο Γεωπόνο Φυτικής Παραγωγής, από το ΑΤΕΙ Καλαμάτας. Με εμπειρία και εξειδίκευση στον τομέα της απεντόμωσης και μυοκτονίας, ο Κωνσταντίνος ηγείται της εταιρείας προσφέροντας τις καλύτερες λύσεις για την καταπολέμηση παρασίτων και την προστασία του περιβάλλοντος.</p>
+          <div class="flex-1" role="region" aria-labelledby="founder-title">
+            <h2 id="founder-title" class="text-3xl font-semibold text-gray-800 mb-4 text-center">Ο Ιδρυτής της PestXperts</h2>
+            <p class="text-lg text-gray-600 mb-4 text-center">Η PestXperts ιδρύθηκε από τον Κωνσταντίνο Πρεβεζιάνο, Τεχνολόγο Γεωπόνο Φυτικής Παραγωγής (ΑΤΕΙ Καλαμάτας), με εξειδίκευση στην ολοκληρωμένη διαχείριση παρασίτων. Με πολυετή εμπειρία στον χώρο της απεντόμωσης και της μυοκτονίας, ο Κωνσταντίνος ηγείται προσωπικά κάθε έργου, με στόχο τη μέγιστη ασφάλεια, υγιεινή και απόδοση – είτε πρόκειται για κατοικία, επαγγελματικό χώρο ή βιομηχανική εγκατάσταση.</p>
             <div class="flex justify-center">
               <blockquote class="max-w-4xl text-center text-xl italic text-gray-500 border-l-4 border-gray-400 pl-6">
-                "Είναι σημαντικό για εμάς να προσφέρουμε λύσεις που προστατεύουν όχι μόνο τους χώρους σας, αλλά και το περιβάλλον γύρω σας."
+                "Για εμάς, η καταπολέμηση παρασίτων δεν είναι απλώς μια υπηρεσία. Είναι δέσμευση: να προστατεύουμε τους χώρους σας, την υγεία σας και το περιβάλλον που μας φιλοξενεί."
               </blockquote>
             </div>
           </div>

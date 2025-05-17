@@ -6,17 +6,24 @@
     <!-- Τίτλος με κάθετη γραμμή -->
     <div class="flex items-center justify-center text-center w-full lg:w-1/3">
       
-      <h2 class="lg:ml-32 text-5xl font-semibold text-center font-sans text-green-900">Επικοινωνία</h2>
+      <h1 id="Contact" class="lg:ml-32 text-5xl font-semibold text-center font-sans text-green-900">Επικοινωνία</h1>
     </div>
 
     <!-- Glass κάρτες -->
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full lg:w-2/4 ">
 
       <!-- Κάρτα -->
-      <div class="p-5 rounded-2xl border border-white/30 bg-white/10 backdrop-blur-xl shadow-xl transition transform hover:scale-105 duration-300">
+      <div 
+      onclick="window.location.href='tel:+306978102685'"  
+      class="p-5 rounded-2xl border border-white/30 bg-white/10 backdrop-blur-xl shadow-xl transition transform hover:scale-105 duration-300"
+      role="button" 
+      aria-label="Κλήση στο τηλέφωνο 6978102685"
+      tabindex="0"
+      >
+      
         <div class="flex items-center gap-4">
           <div class="w-10 h-10 flex items-center justify-center text-ecoGreen text-lg">
-            <i onclick="window.location.href='tel:+306978102685'" class="fas fa-phone-alt"></i>
+            <i class="fas fa-phone-alt"></i>
           </div>
           <div>
             <p class="text-sm text-myblack4">Τηλέφωνο</p>
@@ -26,10 +33,16 @@
       </div>
 
       <!-- Email -->
-      <div class="p-5 rounded-2xl border border-white/30 bg-white/10 backdrop-blur-xl shadow-xl transition transform hover:scale-105 duration-300">
+      <div 
+      onclick="window.location.href='mailto:info@pestxperts.gr'"
+      class="p-5 rounded-2xl border border-white/30 bg-white/10 backdrop-blur-xl shadow-xl transition transform hover:scale-105 duration-300"
+      role="button"
+      aria-label="Αποστολή email στο info@pestxperts.gr"
+      tabindex="0"
+      >
         <div class="flex items-center gap-4">
           <div class="w-10 h-10 flex items-center justify-center text-ecoGreen text-lg">
-            <i onclick="window.location.href='mailto:info@pestxperts.gr'" class="fas fa-envelope"></i>
+            <i class="fas fa-envelope"></i>
           </div>
           <div>
             <p class="text-sm text-myblack4">Email</p>
@@ -39,7 +52,10 @@
       </div>
 
       <!-- Διεύθυνση -->
-      <div class="p-5 rounded-2xl border border-white/30 bg-white/10 backdrop-blur-xl shadow-xl transition transform hover:scale-105 duration-300">
+      <div class="p-5 rounded-2xl border border-white/30 bg-white/10 backdrop-blur-xl shadow-xl transition transform hover:scale-105 duration-300"
+      aria-label="Διεύθυνση: Ηλιουπόλεως 10, Νίκαια 18450"
+      tabindex="0"
+      >
         <div class="flex items-center gap-4">
           <div class="w-10 h-10 flex items-center justify-center text-ecoGreen text-lg">
             <i class="fas fa-map-marker-alt"></i>
@@ -52,7 +68,10 @@
       </div>
 
       <!-- Ωράριο -->
-      <div class="p-5 rounded-2xl border border-white/30 bg-white/10 backdrop-blur-xl shadow-xl transition transform hover:scale-105 duration-300">
+      <div class="p-5 rounded-2xl border border-white/30 bg-white/10 backdrop-blur-xl shadow-xl transition transform hover:scale-105 duration-300"
+      aria-label="Ωράριο Λειτουργίας: Δευτέρα εώς Παρασκευή, 09:00 π.μ. - 17:00 μ.μ. "
+      tabindex="0"
+      >
         <div class="flex items-center gap-4">
           <div class="w-10 h-10 flex items-center justify-center text-ecoGreen text-lg">
             <i class="fas fa-clock"></i>
@@ -68,13 +87,36 @@
   </div>
 </div>
 
-<div>
-  <p class="text-center text-base font-medium text-gray-500">Για επείγοντα περιστατικά, είμαστε διαθέσιμοι 24/7!</p>
-</div>
-
+  <!-- Viber CTA Section -->
+  <div class="mt-16 mb-10 text-center">
+    <div class="bg-gradient-to-r from-purple-50 to-green-50 p-8 rounded-2xl border border-white/30 backdrop-blur-sm shadow-lg">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+        <span class="text-green-600">Βρήκες απρόσκλητο επισκέπτη;</span> 
+        <span class="block md:inline">Δείξ'τον μας μέσω Viber!</span>
+      </h2>
+      
+      <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+        Στείλε μας φωτογραφία του ανεπιθύμητου επισκέπτη απευθείας στο Viber 
+        και θα σου δώσουμε άμεση λύση! Είμαστε διαθέσιμοι 24/7 για επείγοντα περιστατικά.
+      </p>
+      
+      <button 
+        onclick="openViber()"
+        aria-label="Στείλε μήνυμα μέσω Viber"
+        class="px-8 py-3 bg-viber-purple hover:bg-viber-purple-dark text-white font-semibold rounded-full shadow-lg transition duration-300 transform hover:scale-105"
+        style="background-color: #7360F2;">
+        <i class="fab fa-viber mr-2"></i> Στείλε μήνυμα τώρα
+      </button>
+      
+      
+      <p class="mt-4 text-sm text-gray-500">
+        Ή καλέστε μας απευθείας στο <strong>6978102685</strong>
+      </p>
+    </div>
+  </div>
 
 
   <div class="flex mx-auto items-center justify-center mt-20 mb-10  relative w-full md:max-w-9/12 pb-[56.25%] md:pb-[17%] ">
-    <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.4145634899087!2d23.649784800000003!3d37.96745349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8419cc8fbb009ad1%3A0xc8e16ab5db21ed33!2zUGVzdFhwZXJ0cyAozqDPgc61zrLOtc62zrnOrM69zr_PgiDOms-Jzr3Pg8-EzrHOvc-Ezq_Ovc6_z4Ip!5e0!3m2!1sen!2sgr!4v1743719804419!5m2!1sen!2sgr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.4145634899087!2d23.649784800000003!3d37.96745349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8419cc8fbb009ad1%3A0xc8e16ab5db21ed33!2zUGVzdFhwZXJ0cyAozqDPgc61zrLOtc62zrnOrM69zr_PgiDOms-Jzr3Pg8-EzrHOvc-Ezq_Ovc6_z4Ip!5e0!3m2!1sen!2sgr!4v1743719804419!5m2!1sen!2sgr" title="Χάρτης με την τοποθεσία της επιχείρησης"  allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   
